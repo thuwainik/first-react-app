@@ -13,14 +13,12 @@ let productList = products.map((p) => {
 });
 function App() {
   return (
-    <>
-      <div>
-        <h1 className="title">QueB</h1>
-        <h4 className="slogan">Mix Shape & Bake</h4>
-        <img src={kha} alt="QB icon" className="qb"></img>
-      </div>
+    <div>
+      <h1 className="title">QueB</h1>
+      <h4 className="slogan">Mix Shape & Bake</h4>
+      <img src={kha} alt="QB icon" className="qb"></img>
       <div className="container">{productList}</div>
-    </>
+    </div>
   );
 }
 
