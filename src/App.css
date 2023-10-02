@@ -1,0 +1,14 @@
+body {
+  text-align: center;
+}
+.title {
+  font-family: cursive;
+  color: rgb(138, 60, 0);
+}
+.slogan {
+  font-style: italic;
+  font-family: cursive;
+}
+.qb {
+  width: 80%;
+}
