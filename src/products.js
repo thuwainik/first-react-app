@@ -1,6 +1,7 @@
 import ccc from "./CCC.png";
 import dc from "./DC.png";
-let products = [
+
+const products = [
   {
     name: "Chocolate-Chip Cookies (10pcs)",
     price: 4.5,

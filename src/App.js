@@ -1,22 +1,15 @@
-import kha from "./queb.png";
 import "./App.css";
 import products from "./products";
+import Home from "./components/Home";
+import Products from "./components/Product";
 
-let productList = products.map((p) => {
-  return (
-    <div className="product">
-      <img src={p.img} alt="ccc"></img>
-      <h4>{p.name}</h4>
-      <h4>{p.price}</h4>
-    </div>
-  );
-});
 function App() {
+  const productList = products.map((p) => {
+    return <Product name={p.name} price={p.price} image={p.img}></Product>;
+  });
   return (
     <div>
-      <h1 className="title">QueB</h1>
-      <h4 className="slogan">Mix Shape & Bake</h4>
-      <img src={kha} alt="QB icon" className="qb"></img>
+      <Home />
       <div className="container">{productList}</div>
     </div>
   );
